@@ -3,9 +3,5 @@
 int main(){
 
        
-       for(auto i=0;i<=0;i)
-       {
-          std::cout <<" Hello infinite loop!\n";
-        }
-        return 0;
+std::cout<<"Hello Jenkins World!\n";
 }
