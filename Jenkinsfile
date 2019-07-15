@@ -6,7 +6,7 @@ pipeline {
               steps {
                  
                         echo "Checking out from Git repo";
-                        git 'https://github.com/Celcis/jenkins-docker.git'
+                        git 'https://github.com/rus111/helloworld.git'
                                
                         }
                     }
@@ -19,7 +19,7 @@ pipeline {
          stage('Test') {
                steps {
                    //Crucial part the code is time out block. 
-                    timeout(time: 30, unit: 'SECONDS') {
+                    //timeout(time: 30, unit: 'SECONDS') {
                           sh "bash ./run.sh"
                         echo 'Quality Gate passed succesfully!'
                     }
