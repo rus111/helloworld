@@ -19,7 +19,7 @@ pipeline {
          stage('Test') {
                steps {
                    //Crucial part the code is time out block. 
-                    timeout(time: 200, unit: 'SECONDS') {
+                    timeout(time: 20, unit: 'SECONDS') {
                           sh "bash ./run.sh"
                         echo 'Quality Gate passed succesfully!'
                     }
