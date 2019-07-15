@@ -22,7 +22,7 @@ pipeline {
                     //timeout(time: 30, unit: 'SECONDS') {
                           sh "bash ./run.sh"
                         echo 'Quality Gate passed succesfully!'
-                    }
+                    //}
                 }
             }
          stage('Deploy') {
